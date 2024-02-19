@@ -12,6 +12,7 @@ const Home = () =>{
                 <Hero/>
             <div id="about">
                 <About/>
+                
             </div>
         </div>
         )

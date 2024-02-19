@@ -15,7 +15,7 @@ const Navbar = () => {
   }, []);
 
   const stickNavbar = () => {
-    if (window !== undefined) {
+    if (window) {
       let windowHeight = window.scrollY;
       windowHeight > 10 ? setStickyClass('bg-white text-nav   border-b-[1px] border-black ') : setStickyClass('relative');
     }
