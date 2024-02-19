@@ -6,6 +6,7 @@ const About = () => {
     useEffect(() => {
         AOS.init();
     }, []);
+        
     return (
         <div className="min-h-screen bg-bg1">
             <h1 className="text-nav text-center font-bold text-4xl pt-24 underline underline-offset-8" id="font">

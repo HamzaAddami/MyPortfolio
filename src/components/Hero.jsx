@@ -17,6 +17,7 @@ const textVariante = {
     }
   }
 }
+
 const ImgVariante = {
   initial: {
     y:-600,
@@ -31,6 +32,7 @@ const ImgVariante = {
     }
   }
 }
+
 
 
 
