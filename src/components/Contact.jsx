@@ -14,8 +14,7 @@ const Work = () => {
     <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
       <div class="lg:col-span-2 lg:py-12">
         <p class="max-w-xl text-6xl font-bold text-nav" id="font">
-          Contact Me Here , 
-          Send a Message 
+          Contact Me Here 
         </p>
 
         <div class="mt-8">
