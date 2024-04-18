@@ -4,8 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg1: "#FFF0E5",
-        nav: "#10162F",
+        bg1: "#EEEEEE",
+        nav: "#222831",
+        hover: "#00ADB5",
+        secondery: "#393E46",
       },
     },
   },

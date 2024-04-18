@@ -1,1 +1,0 @@
-const Commit = 'Modified'

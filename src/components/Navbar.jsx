@@ -1,23 +1,25 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
-  const [stickyClass, setStickyClass] = useState('relative');
-
+  const [stickyClass, setStickyClass] = useState("relative");
+  const [navItime, setnavItem] = useState('text-white');
   useEffect(() => {
-    window.addEventListener('scroll', stickNavbar);
+    window.addEventListener("scroll", stickNavbar);
 
     return () => {
-      window.removeEventListener('scroll', stickNavbar);
+      window.removeEventListener("scroll", stickNavbar);
     };
   }, []);
 
   const stickNavbar = () => {
     if (window) {
       let windowHeight = window.scrollY;
-      windowHeight > 10 ? setStickyClass('bg-white text-nav   border-b-[1px] border-black ') : setStickyClass('relative');
+      windowHeight > 10
+        ? setStickyClass("bg-bg1 bg-opacity-90 text-nav drop-shadow-2xl") & setnavItem('text-nav')
+        : setStickyClass("relative") & setnavItem('text-white') ;
     }
   };
 
@@ -28,32 +30,32 @@ const Navbar = () => {
   const CloseMenu = () => {
     SetMenu(false);
   };
-
+const NavbarItem = `cursor-pointer text-hover font-smbold hover:text-hover hover:scale-125 duration-500 `;
   return (
-    <div className="fixed w-full z-30 lg:p-0 lg:px-0 lg:pt-0 md:pt-0">
+    <div className='fixed w-full z-30 lg:p-0 lg:px-0 lg:pt-0 md:pt-0 X'>
       <div
-        className={`flex flex-row justify-between p-5 px-5 font-bold
+        className={`flex flex-row justify-between p-5 px-5   
              ${stickyClass}  `}
       >
         <Link
-          to=""
+          to="hero"
           spy={true}
           smooth={true}
           duration={500}
-          className="cursor-pointer hover:text-blue-600"
+          className={NavbarItem}
         >
-          <div className="cursor-pointer pl-6" id="font1">
-            HAMZA ADDAMI
+          <div className="cursor-pointer pl-6 text-xl" id="milies">
+            <span className={`${navItime}`}>HAMZA </span>ADDAMI
           </div>
         </Link>
-        <nav className="hidden md:flex flex-row items-center  gap-10">
+        <nav className="hidden md:flex flex-row items-center font-sm-bold text-xl  gap-10">
           <Link
-            to=""
+            to="hero"
             spy={true}
             smooth={true}
             duration={500}
-            className="cursor-pointer hover:text-blue-600"
-            id="font1"
+            className={NavbarItem}
+            id="milies"
           >
             Home
           </Link>
@@ -62,18 +64,18 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="cursor-pointer hover:text-blue-600"
-            id="font1"
+            className={NavbarItem}
+            id="milies"
           >
             About
           </Link>
           <Link
-            to=""
+            to="skills"
             spy={true}
             smooth={true}
             duration={500}
-            className="cursor-pointer hover:text-blue-600"
-            id="font1"
+            className={NavbarItem}
+            id="milies"
           >
             Skills
           </Link>
@@ -82,18 +84,18 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="cursor-pointer hover:text-blue-600"
-            id="font1"
+            className={NavbarItem}
+            id="milies"
           >
             Work
           </Link>
           <Link
-            to=""
+            to="contact"
             spy={true}
             smooth={true}
             duration={500}
-            className="cursor-pointer hover:text-blue-600"
-            id="font1"
+            className={NavbarItem}
+            id="milies"
           >
             Contact
           </Link>
@@ -110,23 +112,25 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div
+      <div id="font"
         className={` ${
           menu ? "translate-x-0 " : "-translate-x-full"
-        } lg:hidden flex flex-col absolute bg-black text-white left-0 top-30 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+        } lg:hidden flex flex-col absolute bg-nav text-white left-0 top-12 font-semibold text-2xl 
+          text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
       >
         <Link
-          to=""
+          to="home"
           spy={true}
           smooth={true}
           duration={500}
           className="cursor-pointer"
           onClick={CloseMenu}
+          
         >
           Home
         </Link>
         <Link
-          to=""
+          to="about"
           spy={true}
           smooth={true}
           duration={500}
@@ -136,7 +140,7 @@ const Navbar = () => {
           About
         </Link>
         <Link
-          to=""
+          to="skills"
           spy={true}
           smooth={true}
           duration={500}
@@ -156,7 +160,7 @@ const Navbar = () => {
           Work
         </Link>
         <Link
-          to=""
+          to="contact"
           spy={true}
           smooth={true}
           duration={500}
