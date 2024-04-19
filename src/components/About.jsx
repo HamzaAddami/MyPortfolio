@@ -9,7 +9,10 @@ const About = () => {
   }, []);
 
   return (
-    <section className="pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:my-14 " style={{ height: "655px" }}>
+    <section
+      className="pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:my-14 "
+      style={{ height: "655px" }}
+    >
       <div class="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16">
         <div class="px-6">
           <div class="flex flex-wrap justify-center">
@@ -63,10 +66,24 @@ const About = () => {
                   functional websites.
                 </p>
                 <a
-                  href="javascript:;"
-                  class="font-normal text-nav hover:text-hover"
+                  href="./public/Files/MonCV.pdf"
+                  download="MonCV.pdf"
+                  class="px-4 py-3 bg-hover w-56 justify-center item-center mx-auto  rounded-md text-white outline-none  flex"
                 >
-                  Download CV→
+                  <svg
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
+                  </svg>
+                  Download CV
                 </a>
               </div>
             </div>

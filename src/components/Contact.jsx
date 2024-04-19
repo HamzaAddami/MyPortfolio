@@ -18,7 +18,7 @@ const Work = () => {
         </p>
 
         <div class="mt-8">
-          <a href="#" class="text-2xl font-bold text-pink-600">+212 637-597869</a>
+          <a href="#" class="text-2xl font-bold text-hover">+212 637-597869</a>
 
           <address class="mt-2 not-italic text-nav">Casablanca, Maroc</address>
         </div>
@@ -74,7 +74,7 @@ const Work = () => {
           <div class="mt-4">
             <button
               type="submit"
-              class="inline-block w-full rounded-lg bg-pink-600 px-5 py-3 font-medium text-white sm:w-auto"
+              class="inline-block w-full rounded-lg bg-hover px-5 py-3 font-medium text-white sm:w-auto"
             >
               Send Message
             </button>
