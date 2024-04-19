@@ -60,7 +60,7 @@ const Skills = () => {
               data-aos-duration="1500"
             >
               Visit my{" "}
-              <a href="#" class="text-hover hover:underline">
+              <a href="https://www.linkedin.com/in/hamza-addami-977510264/" class="text-hover hover:underline">
                 LinkedIn
               </a>{" "}
               for more details.

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-scroll";
 import {
   FaLinkedinIn,
   FaGithub,
@@ -6,15 +7,15 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import AOS from "aos";
-// import { animate, motion } from "framer-motion";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+
 const Hero = () => {
   const [text] = useTypewriter({
     words: [
       " Hamza Addami",
       " a UI Developer",
-      " a Front-end Developer",
-      " a Back-end Developer",
+      " a Frontend Developer",
+      " a Backend Developer",
     ],
     loop: {},
   });
@@ -25,8 +26,8 @@ const Hero = () => {
     "mx-2 text-bg1 font-bold text-4xl hover:text-hover hover:scale-125 duration-500 ";
   return (
     <header
-      style={{ height:"600px" }}
-      className="w-full bg-nav py-12 sm:py-0 md:py-24 lg:py-32 xl:py-48"
+      style={{ height: "600px" }}
+      className="w-full bg-nav py-12 sm:py-0 md:py-24 lg:py-32 xl:py-48 max-sm:pt-16"
     >
       <div className="container flex ² flex-col items-center px-4 space-y-8 text-center md:px-6 md:flex-row md:space-y-0 lg:space-x-12">
         <div className="space-y-2 md:py-12">
@@ -44,7 +45,11 @@ const Hero = () => {
             experiences.
           </p>
           <div className="pt-5 flex justify-center">
-            <button
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
               id="milies"
               class="cursor-pointer flex justify-between bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-hover hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]"
             >
@@ -63,24 +68,27 @@ const Hero = () => {
                   d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
                 ></path>
               </svg>
-            </button>
+            </Link>
           </div>
           <div className="pt-8 flex flex-row justify-center items-center">
             <a
-              href=""
+              href="https://www.linkedin.com/in/hamza-addami-977510264/"
               className={IconsStyle}
               // data-aos="fade-up"
               // data-aos-anchor-placement="center-bottom"
             >
               <FaLinkedinIn />
             </a>
-            <a href="" className={IconsStyle}>
+            <a href="https://github.com/HamzaAddami" className={IconsStyle}>
               <FaGithub />
             </a>
-            <a href="" className={IconsStyle}>
+            <a
+              href="https://www.instagram.com/snopow_89/?igsh=OXlrMGxlYmoyZHZq&utm_source=qr"
+              className={IconsStyle}
+            >
               <FaInstagram />
             </a>
-            <a href="" className={IconsStyle}>
+            <a href="https://wa.me/+212637597869" className={IconsStyle}>
               <FaWhatsapp />
             </a>
           </div>
@@ -90,7 +98,7 @@ const Hero = () => {
             alt="Hero"
             className="mx-auto aspect-square rounded-xl object-cover object-center overflow-hidden shad-bg-gray-200"
             height="400"
-            src="./public/Pictures/ppp.jpg"
+            src="src/assets/Pictures/ppp.jpg"
             width="400"
           />
         </div>

@@ -19,7 +19,7 @@ const About = () => {
             <div class="w-full flex justify-center">
               <div class="relative">
                 <img
-                  src="./public/Pictures/MyPic.jpg"
+                  src="src/assets/Pictures/MyPic.jpg"
                   class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px] max-h-[150px]"
                 />
               </div>
@@ -66,7 +66,7 @@ const About = () => {
                   functional websites.
                 </p>
                 <a
-                  href="./public/Files/MonCV.pdf"
+                  href="src/assets/Files/MonCV.pdf"
                   download="MonCV.pdf"
                   class="px-4 py-3 bg-hover w-56 justify-center item-center mx-auto  rounded-md text-white outline-none  flex"
                 >
