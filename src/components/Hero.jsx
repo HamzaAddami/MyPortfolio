@@ -27,9 +27,9 @@ const Hero = () => {
   return (
     <header
       style={{ height: "600px" }}
-      className="w-full bg-nav py-12 sm:py-0 md:py-24 lg:py-32 xl:py-48 max-sm:pt-16"
+      className="w-full bg-nav sm:py-0 md:py-24 lg:py-32 xl:py-48 max-sm:pt-16"
     >
-      <div className="container flex ² flex-col items-center px-4 space-y-8 text-center md:px-6 md:flex-row md:space-y-0 lg:space-x-12">
+      <div className="container flex flex-col items-center px-4 space-y-0 text-center md:px-6 md:flex-row md:space-y-0 lg:space-x-12">
         <div className="space-y-2 md:py-12">
           <h1
             className="text-3xl mt-8 font-bold tracking-tighter sm:text-4xl md:text-4xl lg:text-6xl/none text-bg1"
@@ -51,7 +51,7 @@ const Hero = () => {
               smooth={true}
               duration={500}
               id="milies"
-              class="cursor-pointer flex justify-between bg-gray-800 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-hover hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]"
+              class="cursor-pointer flex justify-between bg-hover px-3 py-2 rounded-full text-bg1 tracking-wider shadow-xl hover:text-white hover:bg-hover hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]"
             >
               Contact Me
               <svg
@@ -74,8 +74,6 @@ const Hero = () => {
             <a
               href="https://www.linkedin.com/in/hamza-addami-977510264/"
               className={IconsStyle}
-              // data-aos="fade-up"
-              // data-aos-anchor-placement="center-bottom"
             >
               <FaLinkedinIn />
             </a>
@@ -98,7 +96,7 @@ const Hero = () => {
             alt="Hero"
             className="mx-auto aspect-square rounded-xl object-cover object-center overflow-hidden shad-bg-gray-200"
             height="400"
-            src="src/assets/Pictures/ppp.png"
+            src="public\Pictures\ppp.png"
             width="400"
           />
         </div>

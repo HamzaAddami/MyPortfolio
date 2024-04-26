@@ -7,19 +7,18 @@ const About = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+  
+  
 
   return (
-    <section
-      className="pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:mt-14 max-sm:mt-14 "
-      style={{ height: "600px" }}
-    >
-      <div class="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16">
+    <section className="mb-0  pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:mt-10  lg:mt-12">
+      <div class="relative max-w-md mx-auto md:max-w-2xl mt-0 min-w-0 break-words w-full  shadow-lg rounded-xl mt-14">
         <div class="px-6">
           <div class="flex flex-wrap justify-center">
             <div class="w-full flex justify-center">
               <div class="relative">
                 <img
-                  src="src/assets/Pictures/MyPic.jpg"
+                  src='public\Pictures\MyPic.jpg'
                   class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px] max-h-[150px]"
                 />
               </div>

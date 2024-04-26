@@ -5,7 +5,8 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [stickyClass, setStickyClass] = useState("relative");
-  const [navItime, setnavItem] = useState('text-white');
+  const [navItime, setnavItem] = useState("text-white");
+  const [icon, setIcon] = useState("white");
   useEffect(() => {
     window.addEventListener("scroll", stickNavbar);
 
@@ -18,8 +19,12 @@ const Navbar = () => {
     if (window) {
       let windowHeight = window.scrollY;
       windowHeight > 10
-        ? setStickyClass("bg-bg1 bg-opacity-90 text-nav drop-shadow-2xl") & setnavItem('text-nav')
-        : setStickyClass("relative") & setnavItem('text-white') ;
+        ? setStickyClass("bg-bg1 bg-opacity-90 text-nav drop-shadow-2xl") &
+          setnavItem("text-nav") &
+          setIcon("black")
+        : setStickyClass("relative") &
+          setnavItem("text-white") &
+          setIcon("white");
     }
   };
 
@@ -30,9 +35,9 @@ const Navbar = () => {
   const CloseMenu = () => {
     SetMenu(false);
   };
-const NavbarItem = `cursor-pointer text-hover font-smbold hover:text-hover hover:scale-125 duration-500 `;
+  const NavbarItem = `cursor-pointer text-hover font-smbold hover:text-hover hover:scale-125 duration-500 `;
   return (
-    <div className='fixed w-full z-30 lg:p-0 lg:px-0 lg:pt-0 md:pt-0 X'>
+    <div className="fixed w-full z-30 lg:p-0 lg:px-0 lg:pt-0 md:pt-0 X">
       <div
         className={`flex flex-row justify-between p-5 px-5   
              ${stickyClass}  `}
@@ -102,17 +107,18 @@ const NavbarItem = `cursor-pointer text-hover font-smbold hover:text-hover hover
         </nav>
         <div className="md:hidden flex items-center cursor-pointer">
           {menu ? (
-            <AiOutlineClose size={25} onClick={handelchange} color="black" />
+            <AiOutlineClose size={25} onClick={handelchange} color={icon} />
           ) : (
             <AiOutlineMenuUnfold
               size={25}
               onClick={handelchange}
-              color="black"
+              color={icon}
             />
           )}
         </div>
       </div>
-      <div id="font"
+      <div
+        id="font"
         className={` ${
           menu ? "translate-x-0 " : "-translate-x-full"
         } lg:hidden flex flex-col absolute bg-nav text-white left-0 top-12 font-semibold text-2xl 
@@ -125,7 +131,6 @@ const NavbarItem = `cursor-pointer text-hover font-smbold hover:text-hover hover
           duration={500}
           className="cursor-pointer"
           onClick={CloseMenu}
-          
         >
           Home
         </Link>

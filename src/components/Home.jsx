@@ -23,7 +23,7 @@ const Home = () =>{
             <div id="contact">
             <Contact />
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </React.Fragment>
         )
 }

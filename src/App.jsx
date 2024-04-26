@@ -8,11 +8,6 @@ function App() {
   return (
     <>
     <Home />
-    <BrowserRouter>
-        <Routes>
-          <Route path='about' element={<About/>} />
-        </Routes>
-    </BrowserRouter>
     </>
   )
     

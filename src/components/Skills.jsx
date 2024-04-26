@@ -10,7 +10,7 @@ const Skills = () => {
 
   return (
     <section className="max-sm:mt-0">
-       <svg
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         className="w-full"
@@ -22,7 +22,7 @@ const Skills = () => {
         ></path>
       </svg>
       <section
-        class="w-full py-0 md:py-8 bg-nav pt-2 "
+        class="w-full py-0 md:py-8 bg-nav"
         style={{ height: "670px" }}
         id="font"
       >
@@ -60,7 +60,10 @@ const Skills = () => {
               data-aos-duration="1500"
             >
               Visit my{" "}
-              <a href="https://www.linkedin.com/in/hamza-addami-977510264/" class="text-hover hover:underline">
+              <a
+                href="https://www.linkedin.com/in/hamza-addami-977510264/"
+                class="text-hover hover:underline"
+              >
                 LinkedIn
               </a>{" "}
               for more details.
@@ -358,7 +361,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="max-sm:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="max-sm:hidden"
+        >
           <path
             fill="#222831"
             fill-opacity="1"
