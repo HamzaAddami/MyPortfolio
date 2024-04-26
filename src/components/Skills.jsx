@@ -9,11 +9,11 @@ const Skills = () => {
   }, []);
 
   return (
-    <>
+    <section >
        <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        className="w-full max-sm:hidden"
+        className="w-full"
       >
         <path
           fill="#222831"
@@ -366,7 +366,7 @@ const Skills = () => {
           ></path>
         </svg>
       </section>
-    </>
+    </section>
   );
 };
 export default Skills;
