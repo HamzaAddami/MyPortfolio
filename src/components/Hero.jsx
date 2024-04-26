@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="container flex ² flex-col items-center px-4 space-y-8 text-center md:px-6 md:flex-row md:space-y-0 lg:space-x-12">
         <div className="space-y-2 md:py-12">
           <h1
-            className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-4xl lg:text-6xl/none text-bg1"
+            className="text-3xl mt-8 font-bold tracking-tighter sm:text-4xl md:text-4xl lg:text-6xl/none text-bg1"
             id="font"
           >
             Hello, I'm
@@ -98,7 +98,7 @@ const Hero = () => {
             alt="Hero"
             className="mx-auto aspect-square rounded-xl object-cover object-center overflow-hidden shad-bg-gray-200"
             height="400"
-            src="src/assets/Pictures/ppp.jpg"
+            src="src/assets/Pictures/ppp.png"
             width="400"
           />
         </div>

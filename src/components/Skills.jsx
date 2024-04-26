@@ -9,7 +9,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section >
+    <section className="max-sm:mt-0">
        <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -22,7 +22,7 @@ const Skills = () => {
         ></path>
       </svg>
       <section
-        class="w-full py-0 md:py-8 bg-nav pt-2"
+        class="w-full py-0 md:py-8 bg-nav pt-2 "
         style={{ height: "670px" }}
         id="font"
       >

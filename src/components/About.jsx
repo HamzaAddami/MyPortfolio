@@ -10,8 +10,8 @@ const About = () => {
 
   return (
     <section
-      className="pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:my-14 "
-      style={{ height: "655px" }}
+      className="pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:mt-14 max-sm:mt-14 "
+      style={{ height: "600px" }}
     >
       <div class="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16">
         <div class="px-6">
