@@ -24,10 +24,7 @@ const Home = () =>{
             <div id="contact">
             <Contact />
             </div>
-            <div>
-                <Work />
-            </div>
-            {/* <Footer /> */}
+            <Footer />
         </React.Fragment>
         )
 }

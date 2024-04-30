@@ -125,7 +125,7 @@ const Navbar = () => {
           text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
       >
         <Link
-          to="home"
+          to="hero"
           spy={true}
           smooth={true}
           duration={500}
