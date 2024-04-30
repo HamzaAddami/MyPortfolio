@@ -6,6 +6,7 @@ import Skills from "./Skills";
 import Contact from  "./Contact";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./Footer";
+import Work from "./Work";
 
 const Home = () =>{
     return(
@@ -22,6 +23,9 @@ const Home = () =>{
             </div>
             <div id="contact">
             <Contact />
+            </div>
+            <div>
+                <Work />
             </div>
             {/* <Footer /> */}
         </React.Fragment>
