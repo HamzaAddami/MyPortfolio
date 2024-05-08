@@ -37,7 +37,7 @@ const Navbar = () => {
   };
   const NavbarItem = `cursor-pointer text-hover font-smbold hover:text-hover hover:scale-125 duration-500 `;
   return (
-    <div className="fixed w-full z-30 lg:p-0 lg:px-0 lg:pt-0 md:pt-0 X">
+    <nav className="fixed w-full z-30 lg:p-0 lg:px-0 lg:pt-0 md:pt-0 X">
       <div
         className={`flex flex-row justify-between p-5 px-5   
              ${stickyClass}  `}
@@ -175,7 +175,7 @@ const Navbar = () => {
           Contact
         </Link>
       </div>
-    </div>
+    </nav>
   );
 };
 

@@ -26,8 +26,8 @@ const Hero = () => {
     "mx-2 text-bg1 font-bold text-4xl hover:text-hover hover:scale-125 duration-500 ";
   return (
     <header
-      style={{ height: "600px" }}
-      className="w-full bg-nav sm:py-0 md:py-24 lg:py-32 xl:py-48 max-sm:pt-16"
+      // style={{ height: "600px" }}
+      className="w-full h-screen bg-nav sm:py-0  xl:py-48 max-sm:pt-16"
     >
       <div className="container flex flex-col items-center px-4 space-y-0 text-center md:px-6 md:flex-row md:space-y-0 lg:space-x-12">
         <div className="space-y-2 md:py-12">
@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="pt-5 flex justify-center">
             <Link
               to="contact"
-              spy={true}
+              spy={false}
               smooth={true}
               duration={500}
               id="milies"
@@ -104,7 +104,7 @@ const Hero = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
-        className="max-sm:hidden"
+        // className="max-sm:hidden"
       >
         <path
           fill="#222831"
