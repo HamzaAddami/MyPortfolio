@@ -35,7 +35,7 @@ const Footer = () => {
             <h4 className="text-3xl font-semibold">
               Let's keep in touch!
             </h4>
-            <h5 className="text-lg mt-1 mb-2 text-gray-700">
+            <h5 className="text-lg my-1 mb-2 text-gray-700">
               Find me on any of these platforms.
             </h5>
             <div className="mt-6 flex">
