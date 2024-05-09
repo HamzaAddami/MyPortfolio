@@ -7,6 +7,7 @@ import Contact from  "./Contact";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./Footer";
 import Work from "./Work";
+import BackToTopButton from "../layouts/BackButton";
 
 const Home = () =>{
     return(
@@ -25,6 +26,7 @@ const Home = () =>{
             <Contact />
             </div>
             <Footer />
+            <BackToTopButton />
         </React.Fragment>
         )
 }
