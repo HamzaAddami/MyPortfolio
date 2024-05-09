@@ -5,9 +5,11 @@ import {
   FaInstagram,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Footer = () => {
-  const IconStyle = "cursor-pointer hover:scale-125 duration-500 text-hover font-bold text-6xl items-center mr-2 p-3"
+  const IconStyle =
+    "cursor-pointer hover:scale-125 duration-500 text-hover font-bold text-6xl items-center mr-2 p-3";
   return (
     <footer className="relative bg-gray-300 pt-8 pb-6">
       <div
@@ -32,18 +34,23 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4">
-            <h4 className="text-3xl font-semibold">
-              Let's keep in touch!
-            </h4>
+            <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
             <h5 className="text-lg my-1 mb-2 text-gray-700">
               Find me on any of these platforms.
             </h5>
             <div className="mt-6 flex">
-              <FaLinkedinIn className={IconStyle}/>
-              <FaGithub className={IconStyle}/>
-              <FaInstagram className={IconStyle}/>
-              <FaWhatsapp className={IconStyle}/>
-              
+              <a href="https://www.linkedin.com/in/hamza-addami-977510264/">
+                <FaLinkedinIn className={IconStyle} />
+              </a>
+              <a href="https://github.com/HamzaAddami">
+                <FaGithub className={IconStyle} />
+              </a>
+              <a href="https://www.instagram.com/snopow_89/?igsh=OXlrMGxlYmoyZHZq&utm_source=qr">
+                <FaInstagram className={IconStyle} />
+              </a>
+              <a href="https://wa.me/+212637597869">
+                <FaWhatsapp className={IconStyle} />
+              </a>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
@@ -54,34 +61,43 @@ const Footer = () => {
                 </span>
                 <ul className="list-unstyled ">
                   <li>
-                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation">About Me
-                    </a>
+                    <Link
+                      className="cursor-pointer hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      to="about"
+                      smooth={true}
+                    >
+                      About Me
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com">My Skills
-                    </a>
+                    <Link
+                      className="cursor-pointer hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      to="skills"
+                      smooth={true}
+                    >
+                      My Skills
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial">
-                    </a>
+                    <Link
+                      className="cursor-pointer hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      to="work"
+                      smooth={true}
+                    >
+                      Works
+                    </Link>
                   </li>
                   <li>
-                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free">Works
-                    </a>
+                    <Link
+                      className="cursor-pointer hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      to="contact"
+                      smooth={true}
+                    >
+                      Contact Me
+                    </Link>
                   </li>
-                  <li>
-                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free">Contact Me
-                    </a>
-                  </li>
-
                 </ul>
               </div>
-              
             </div>
           </div>
         </div>
@@ -89,13 +105,13 @@ const Footer = () => {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © {new Date().getFullYear()}{" "}Realised by Hamza Addami.
+              Copyright © {new Date().getFullYear()} Realised by Hamza Addami.
             </div>
           </div>
         </div>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
