@@ -16,7 +16,9 @@ const About = () => {
         <div class="px-6">
           <div class="flex flex-wrap justify-center">
             <div class="w-full flex justify-center">
-              <div class="relative">
+              <div class="relative"
+                   data-aos="zoom-in"
+                   data-aos-duration="1200">
                 <img
                   src='public/Pictures/MyPic.png'
                   class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px] max-h-[150px]"

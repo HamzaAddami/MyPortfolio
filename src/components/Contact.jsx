@@ -1,13 +1,18 @@
-import React from "react";
-
+import React,{useEffect} from "react";
+import AOS from "aos";
 
 
 const Work = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <section class="bg-bg1 pt-16 lg:pt-32">
       <div class="mx-auto max-w-screen-xl px-4 py-16 max-sm:pt-0 max-sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
-          <div class="lg:col-span-2 lg:py-12">
+          <div class="lg:col-span-2 lg:py-12"
+               data-aos="fade-right"
+               data-aos-duration="1200" >
             <p class="max-w-xl text-6xl font-bold text-nav" id="font">
               Contact Me Here
             </p>
@@ -23,7 +28,9 @@ const Work = () => {
             </div>
           </div>
 
-          <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+          <div class="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12"
+               data-aos="fade-left"
+               data-aos-duration="1200" >
             <form action="#" class="space-y-4">
               <div>
                 <label class="sr-only" for="name">

@@ -24,23 +24,18 @@
     font-family: 'GS50_EUCJ', sans-serif;
 
 }
-#button {
+#BackToTheTopButton {
     font-family: 'milies', sans-serif;
-    @apply w-[50px] h-[50px] bg-[#00ADB5] font-semibold flex items-center justify-center shadow-[0px_0px_0px_4px_#00ADB5] cursor-pointer duration-[0.3s] overflow-hidden fixed rounded-[50%] border-[none] right-10 bottom-10 hover:w-[140px] hover:duration-[0.3s] hover:bg-[#00ADB5] hover:items-center hover:rounded-[50px] before:absolute before:content-["Back_to_Top"] before:text-[white] before:text-[0px] before:-bottom-5 hover:before:text-[13px] hover:before:opacity-100 hover:before:duration-[0.3s] hover:before:bottom-[unset];
+    @apply w-[50px] h-[50px] bg-[#00ADB5] font-semibold flex items-center justify-center shadow-[0px_0px_0px_4px_#00ADB5] cursor-pointer duration-[0.3s] overflow-hidden fixed rounded-[50%] border-[none] right-7 bottom-10 hover:w-[140px] hover:duration-[0.3s] hover:bg-[#00ADB5] hover:items-center hover:rounded-[50px] before:absolute before:content-["Back_to_Top"] before:text-[white] before:text-[0px] before:-bottom-5 hover:before:text-[13px] hover:before:opacity-100 hover:before:duration-[0.3s] hover:before:bottom-[unset];
   }
-  .svgIcon {
+  .svgIconBackToTheTopButton {
     @apply w-3 duration-[0.3s];
   }
-  .svgIcon path {
-    @apply fill-[white];
+  .svgIconBackToTheTopButton path {
+    @apply fill-[white] animate-bounce ;
   }
-  #button:hover .svgIcon {
-    @apply duration-[0.3s] translate-y-[-200%];
-    /* width: 20px; */
+  #BackToTheTopButton:hover .svgIconBackToTheTopButton {
+    @apply duration-[0.3s] translate-y-[-200%] ;
+   
   }
-  #button::before {
-    /* transition-duration: .3s; */
-  }
-  #button:hover::before {
-    /* transform: translateY(-30px); */
-  }
+  
