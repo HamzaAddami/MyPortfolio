@@ -96,7 +96,7 @@ const Hero = () => {
             alt="Hero"
             className="mx-auto aspect-square rounded-xl object-cover object-center overflow-hidden shad-bg-gray-200"
             height="400"
-            src="public/Pictures/PPP.webp"
+            src="public/Pictures/PPP.png"
             width="400"
           />
         </div>

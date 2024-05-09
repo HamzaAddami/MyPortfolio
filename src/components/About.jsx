@@ -18,7 +18,7 @@ const About = () => {
             <div class="w-full flex justify-center">
               <div class="relative">
                 <img
-                  src='public/Pictures/MyPic.webp'
+                  src='public/Pictures/MyPic.png'
                   class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px] max-h-[150px]"
                 />
               </div>
