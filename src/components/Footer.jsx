@@ -54,27 +54,27 @@ const Footer = () => {
                 </span>
                 <ul className="list-unstyled ">
                   <li>
-                    <a className="hover:scale-125 duration-500 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/presentation">About Me
                     </a>
                   </li>
                   <li>
-                    <a className="hover:scale-125 duration-500 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                         href="https://blog.creative-tim.com">My Skills
                     </a>
                   </li>
                   <li>
-                    <a className="hover:scale-125 duration-500 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                         href="https://www.github.com/creativetimofficial">
                     </a>
                   </li>
                   <li>
-                    <a className="hover:scale-125 duration-500 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/bootstrap-themes/free">Works
                     </a>
                   </li>
                   <li>
-                    <a className="hover:scale-125 duration-500 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                    <a className="hover:scale-y-125 duration-300 text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
                         href="https://www.creative-tim.com/bootstrap-themes/free">Contact Me
                     </a>
                   </li>
