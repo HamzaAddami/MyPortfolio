@@ -11,7 +11,7 @@ const About = () => {
   
 
   return (
-    <section className="mb-0  pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:mt-10  lg:mt-12">
+    <section className="mb-0  pt-16 sm:pt-24 md:pt-32 max-sm:pt-32 max-sm:mt-10  lg:mt-12 left-0">
       <div class="relative max-w-md mx-auto md:max-w-2xl mt-0 min-w-0 break-words w-full  shadow-lg rounded-xl mt-14">
         <div class="px-6">
           <div class="flex flex-wrap justify-center">

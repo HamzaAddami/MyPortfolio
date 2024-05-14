@@ -7,11 +7,7 @@ const BackToTopButton = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 130) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      window.scrollY > 200 ? setIsVisible(true) : setIsVisible(false) 
     };
 
     window.addEventListener("scroll", handleScroll);

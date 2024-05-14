@@ -19,6 +19,7 @@ const Hero = () => {
     ],
     loop: {},
   });
+  
   useEffect(() => {
     AOS.init();
   }, []);
@@ -27,7 +28,7 @@ const Hero = () => {
   return (
     <header
       style={{ height: "600px" }}
-      className="w-full bg-nav sm:py-0  xl:py-48 max-sm:pt-16 relative"
+      className="bg-nav xl:py-48 max-sm:pt-16 "
     >
       <div className="container flex flex-col items-center px-4 space-y-0 text-center md:px-6 md:flex-row md:space-y-0 lg:space-x-12">
         <div className="space-y-2 md:py-12">
